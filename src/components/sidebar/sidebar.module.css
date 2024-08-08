@@ -1,0 +1,93 @@
+.body {
+  @apply w-full h-full flex flex-col justify-between gap-6 overflow-y-auto;
+}
+
+.logoWrapper {
+    @apply w-full flex items-center gap-4 p-4 border-b-2 border-b-mpurple;
+}
+
+.logoWrapper > h3 {
+    @apply font-bold text-xl
+}
+
+.links, .other {
+    @apply flex flex-col items-start gap-2 px-4 pt-2;
+}
+
+.link {
+    @apply flex items-center gap-3 px-2 py-2 rounded w-full transition-colors duration-300;
+    @apply hover:bg-slate-200
+}
+
+.link.active {
+    @apply bg-accent;
+}
+
+.link .text {
+    @apply font-medium
+}
+
+.link.active .icon {
+    @apply text-primary
+}
+
+.drop {
+    @apply flex flex-col items-start gap-2 w-full 
+}
+.drop .top {
+    @apply flex items-center transition-colors w-full gap-2 cursor-pointer px-1 py-2 rounded;
+    @apply hover:bg-slate-200;
+}
+
+.drop .text {
+    @apply font-medium
+}
+
+.drop .chevron {
+    @apply ml-auto transition-all
+}
+
+.drop .content {
+    @apply w-full flex flex-col gap-2 px-1 pl-6 transition-all overflow-y-clip duration-300 ease-in-out
+}
+
+.drop .account {
+    @apply flex flex-col items-start gap-2
+}
+
+.drop .account .label {
+    @apply font-medium
+}
+
+.drop .amount {
+    @apply text-gray text-base
+}
+
+.drop .closed {
+    @apply max-h-0 opacity-0
+}
+
+.drop .open {
+    @apply max-h-[1000px] opacity-100;
+}
+
+.drop:has(.open) .chevron {
+    @apply rotate-180;
+}
+
+
+.other {
+    @apply pb-7 border-t-2 border-t-mpurple;
+}
+
+.user {
+    @apply flex items-center gap-3;
+}
+
+.user .image {
+    @apply size-8 rounded-full object-cover;
+}
+
+.user .text {
+    @apply font-medium
+}

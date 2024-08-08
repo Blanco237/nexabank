@@ -1,0 +1,26 @@
+.body {
+    @apply w-full min-h-[350px] rounded-2xl relative flex flex-col gap-7 items-start;
+    background: linear-gradient(90deg, rgba(227,240,255,1) 0%, rgba(217,222,243,1) 18%, rgba(206,202,229,1) 49%, rgba(238,210,217,1) 81%, rgba(253,240,230,1) 100%);
+    padding: 4rem 3rem 3.5rem;
+}
+
+.image {
+    @apply absolute w-[38%] bottom-0 right-[6rem];
+}
+
+.content {
+    @apply flex flex-col gap-2;
+}
+
+.content > h1 {
+    @apply text-7xl font-extrabold
+}
+
+.content > p {
+    @apply text-xl;
+}
+
+.learn {
+    @apply py-2 px-3 rounded bg-white font-semibold text-base transition-colors;
+    @apply hover:bg-slate-100;
+}

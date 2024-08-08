@@ -1,0 +1,32 @@
+.body {
+    @apply w-full h-[200px] rounded-2xl relative overflow-hidden flex flex-col items-start justify-between px-3 py-2;
+    background: linear-gradient(90deg, rgba(172,192,255,1) 46%, rgba(210,181,255,1) 100%);
+}
+
+.ellipse {
+    @apply absolute w-full aspect-square rounded-full border border-white;
+}
+
+.amount {
+    @apply flex flex-col items-start gap-1;
+}
+
+.amount > p {
+    @apply text-lg text-white;
+}
+
+.amount > h4 {
+    @apply text-2xl font-semibold text-white;
+}
+
+.account {
+    @apply text-xl text-white;
+}
+
+.hidden .amount, .hidden .ellipse {
+    @apply opacity-0 transition-all duration-300;
+}
+
+.hidden:hover .amount, .hidden:hover .ellipse {
+    @apply opacity-100;
+}

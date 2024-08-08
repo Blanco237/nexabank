@@ -1,0 +1,38 @@
+.body {
+    @apply flex items-center justify-between;
+}
+
+.text {
+    @apply flex items-end gap-4
+}
+
+.text > h5 {
+    @apply text-2xl font-semibold;
+}
+
+.text > p {
+    @apply text-lg font-medium text-gray
+}
+
+.actions {
+    @apply flex items-stretch gap-2
+}
+
+.searchField {
+    @apply relative border border-mpurple rounded-md overflow-hidden;
+    @apply focus-within:border-gray focus-within:border-opacity-50
+}
+
+.searchField input {
+    @apply w-full h-full px-3 py-2;
+    @apply focus:outline-none
+}
+
+.searchField .icon {
+    @apply absolute top-1/2 -translate-y-1/2 right-3 text-mpurple;
+}
+
+.transfer {
+    @apply flex items-center justify-center gap-2 px-4 py-2 bg-primary text-white rounded-md transition-colors;
+    @apply hover:bg-opacity-85
+}

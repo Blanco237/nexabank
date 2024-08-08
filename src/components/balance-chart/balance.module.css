@@ -1,0 +1,36 @@
+.body {
+    @apply border-2 rounded-2xl border-mpurple relative w-full min-h-[250px];
+}
+
+.body > canvas {
+    @apply !w-full !h-[200px]
+}
+
+.content{
+    @apply flex justify-between px-5 py-3 items-start
+}
+
+.content > button {
+    @apply hover:bg-gray hover:bg-opacity-10 rounded-lg py-1 px-2 font-medium transition-colors;
+}
+
+.text {
+    @apply flex flex-col gap-2;
+}
+
+.text > h4 {
+    @apply font-medium text-lg text-dark
+}
+
+.amount {
+    @apply flex gap-4 items-end;
+}
+
+.amount > h2 {
+    @apply text-3xl text-dark font-bold;
+}
+
+
+.amount > span {
+    @apply p-1 rounded bg-success-bg text-success font-semibold;
+}

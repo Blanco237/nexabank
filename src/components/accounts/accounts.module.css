@@ -1,0 +1,45 @@
+.body {
+    @apply flex flex-col items-center h-full gap-4 py-4 px-5 border-2 border-mpurple rounded-2xl ;
+}
+
+.top {
+    @apply flex w-full justify-between items-center;
+}
+
+.top > h4 {
+    @apply font-semibold text-xl
+}
+
+.top > button {
+    @apply hover:bg-gray hover:bg-opacity-10 rounded-lg py-1 px-2 font-medium transition-colors;
+}
+
+.cards {
+    @apply w-full relative;
+}
+
+.cards:has(.card:hover) .card:not(:hover) {
+ @apply !opacity-10;
+}
+
+.card {
+    @apply absolute left-1/2 -translate-x-1/2 transition-all duration-300;
+    @apply hover:!w-full hover:-translate-y-10 hover:!opacity-100 hover:z-30;
+}
+
+.actions {
+    @apply flex justify-center items-center gap-4 w-full;
+}
+
+.action {
+    @apply flex flex-col items-center gap-1;
+}
+
+.action .icon {
+    @apply p-1 rounded-xl size-11 flex items-center justify-center border border-mpurple text-primary cursor-pointer;
+    @apply hover:bg-slate-50;
+}
+
+.action > p {
+    @apply text-sm text-gray;
+}
